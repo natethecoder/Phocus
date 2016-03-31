@@ -40,7 +40,7 @@
         var minTime;
         var myTimeout;
         var selectedsoundids = [];
-            $('document').ready(function () {
+        $('document').ready(function () {
             $('#divArea').css("background-color", "black");
             $('#divArea').css("color", "white");
             $('#divArea').click(function () {
@@ -52,8 +52,32 @@
                     waitTime = 0
                     clearTimeout(myTimeout);
                     $('#divArea').html("Start");
-                }
+                }                
             })
+            $('#txtMin').change( function(){
+                //alert( parseInt( $('#txtMin').val()))
+                if (isNaN(parseInt( $('#txtMin').val()))) 
+                {$('#txtMin').val(45)}
+                 else
+                {$('#txtMin').val(parseInt( $('#txtMin').val()))}
+            })
+            $('#txtMax').change( function(){
+                //alert( parseInt( $('#txtMax').val()))
+                if (isNaN(parseInt( $('#txtMax').val()))) 
+                {$('#txtMax').val(100)}
+                 else
+                {
+                    if (parseInt( $('#txtMax').val())<=parseInt( $('#txtMin').val()))
+                    {
+                        $('#txtMax').val(parseInt( $('#txtMin').val())+20)
+                    }
+                    else
+                    {
+                        $('#txtMax').val(parseInt( $('#txtMax').val()))
+                    }  
+                }              
+            })
+
         })
 
         function beep() {
