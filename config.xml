@@ -10,12 +10,10 @@
  <author href="http://www.esu10.org" email="nmcclena@esu10.org">
         Nate McClenahan and Mark Hellman - ESU 10
     </author>
+    <!--https://build.phonegap.com/plugins/430 -->
+<plugin name="com.badrit.backgroundjs" spec="0.1.0" source="pgb" />
 
-    <!--
-        If you do not want any permissions to be added to your app, add the
-        following tag to your config.xml; you will still have the INTERNET
-        permission on your app, which PhoneGap requires.
-    -->
+
     <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
@@ -30,6 +28,13 @@
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
-    
+    <!-- testing found this in but not sure -->
+    <preference name="keepRunning" value="true" />
+    <!-- http://community.phonegap.com/nitobi/topics/background_audio_with_build_and_backgroundjs_plugin -->
+    <platform name="ios" parent="UIBackgroundModes" overwrite="true">
+            <array>
+                <string>audio</string>
+            </array>
+    </platform>
     
 </widget>
