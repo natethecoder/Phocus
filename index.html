@@ -39,6 +39,7 @@
         var maxTime;
         var minTime;
         var myTimeout;
+        var counter =0;
         var selectedsoundids = [];
         $('document').ready(function () {
             $('#divArea').css("background-color", "black");
@@ -78,8 +79,8 @@
                 }              
             })
            cordova.plugins.backgroundMode.enable();
-            alert(cordova.plugins.backgroundMode.isEnabled());
-
+           cordova.plugins.notification.badge.set(counter);
+           document.write(cordova.plugins.backgroundMode.isEnabled())
         })
 
         function beep() {
