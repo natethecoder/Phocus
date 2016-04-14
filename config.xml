@@ -10,7 +10,6 @@
  <author href="http://www.esu10.org" email="nmcclena@esu10.org">
         Nate McClenahan and Mark Hellman - ESU 10
     </author>
-<plugin name="it.witek.cordova.plugin.background-mode" spec="0.6.3" source="pgb" />
-<plugin name="org.apache.cordova.dialogs" spec="0.3.0" source="pgb" />
+
 <gap:plugin name="nl.x-services.plugins.toast" />
 </widget>
