@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.phocus"
+        version   = "1.0.0">
+
+    <name>Phocus
+    </name>
+ <author href="http://www.esu10.org" email="nmcclena@esu10.org">
+        Nate McClenahan and Mark Hellman - ESU 10
+    </author>
+<!-- https://build.phonegap.com/plugins/5439  -->
+<plugin name="cordova-plugin-media" spec="1.0.1" source="pgb" />
+    <preference name="permissions"                value="none"/>
+
+</widget>
