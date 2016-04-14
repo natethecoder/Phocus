@@ -12,6 +12,12 @@
     </author>
 <!-- https://build.phonegap.com/plugins/5439  -->
 <plugin name="cordova-plugin-media" spec="1.0.1" source="pgb" />
+<!--  http://docs.phonegap.com/en/1.9.0/cordova_media_media.md.html#Media -->
+<plugin name="Media" value="org.apache.cordova.AudioHandler" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <preference name="permissions"                value="none"/>
 
 </widget>
