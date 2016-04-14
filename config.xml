@@ -28,11 +28,11 @@
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <!-- testing found this in but not sure -->
     <preference name="keepRunning" value="true" />
-    <!-- http://community.phonegap.com/nitobi/topics/background_audio_with_build_and_backgroundjs_plugin -->
+    <!-- http://community.phonegap.com/nitobi/topics/background_audio_with_build_and_backgroundjs_plugin
     <platform name="ios" parent="UIBackgroundModes" overwrite="true">
             <array>
                 <string>audio</string>
             </array>
     </platform>
-    
+     -->
 </widget>
