@@ -10,8 +10,6 @@
  <author href="http://www.esu10.org" email="nmcclena@esu10.org">
         Nate McClenahan and Mark Hellman - ESU 10
     </author>
-    <!--https://build.phonegap.com/plugins/430 -->
-<plugin name="com.badrit.backgroundjs" spec="0.1.0" source="pgb" />
 
 
     <preference name="permissions"                value="none"/>
