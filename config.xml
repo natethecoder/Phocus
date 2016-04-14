@@ -10,8 +10,7 @@
  <author href="http://www.esu10.org" email="nmcclena@esu10.org">
         Nate McClenahan and Mark Hellman - ESU 10
     </author>
-<plugin name="com.badrit.backgroundjs" spec="0.1.0" source="pgb" />
-
+<plugin name="it.witek.cordova.plugin.background-mode" spec="0.6.3" source="pgb" />
     <preference name="permissions"                value="none"/>
 
 </widget>

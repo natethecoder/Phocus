@@ -113,8 +113,8 @@
             else { maxTime = 20; }
 
             waitTime = (Math.round(Math.random() * (maxTime -minTime)) + minTime) * 1000
-           //myTimeout = setTimeout(beep, waitTime);
-           window.plugins.BackgroundJS.SetBackgroundSeconds(waitTime, beep, function(msg){console.log(msg);});
+           myTimeout = setTimeout(beep, waitTime);
+           
             $('#divArea').html("Stop");
             console.log(waitTime);
         }
